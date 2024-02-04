@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class TextWidget extends StatelessWidget {
-  const TextWidget({super.key});
+  const TextWidget(this.textMessage, {super.key});
+
+  final String textMessage;
 
   @override
   Widget build(context) {
-    return const Text("App developed by Saurabh Kulkarni",
-        style: TextStyle(color: Colors.white, fontSize: 22));
+    return Text(textMessage,
+        style: const TextStyle(color: Colors.white, fontSize: 22));
   }
 }

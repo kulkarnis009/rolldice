@@ -3,9 +3,12 @@ import 'package:rolldice/gradient_container.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        body: GradientContainer(),
+        body: GradientContainer(const [
+          Color.fromARGB(255, 57, 165, 70),
+          Color.fromARGB(255, 48, 96, 180)
+        ]),
       ),
     ),
   );
