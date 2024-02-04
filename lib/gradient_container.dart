@@ -6,7 +6,7 @@ const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
-  GradientContainer(this.myList, {super.key});
+  const GradientContainer(this.myList, {super.key});
 
   final List<Color> myList;
 
